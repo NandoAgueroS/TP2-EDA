@@ -18,11 +18,13 @@ public class Main {
         o1.carga();
         System.out.println("---Carga Original---");
         o1.mostrar();
-        
-        o1.bubbleSort();
-        System.out.println("---Bubble Sort---");
+//        
+//        o1.bubbleSort();
+//        System.out.println("---Bubble Sort---");
+//        o1.mostrar();
+
+        o1.insertionSort();
         o1.mostrar();
-        
     }
     
 }

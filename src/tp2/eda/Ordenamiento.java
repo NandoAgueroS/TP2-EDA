@@ -22,37 +22,34 @@ public class Ordenamiento {
         }
     }
 
-//    public void bubbleSort(){
-//        int aux;
-//        
-//        for (int i = (datos.length-1); i >=0; i--) {
-//            for (int j = 1; j <=i; j++) {
-//                if (datos[j-1]>datos[j]) {
-//                    aux=datos[j-1];
-//                    datos[j-1]=datos[j];
-//                    datos[j]=aux;
-//                }
-//            }
-//        }
-//    }
     public void bubbleSort() {
         int aux;
         boolean c;
         for (int i = (datos.length - 1); i >= 0; i--) {
             c = true;
-            System.out.println("i");
             for (int j = 1; j <= i; j++) {
                 if (datos[j - 1] > datos[j]) {
                     aux = datos[j - 1];
                     datos[j - 1] = datos[j];
                     datos[j] = aux;
                     c = false;
-                    System.out.print("o");
                 }
             }
              if (c) {
                 i = 0;
             }
+        }
+    }
+    public void insertionSort(){
+        int aux,j;
+        for (int i = 1; i < (datos.length); i++) {
+            j=i;
+            aux=datos[i];
+            while (j>0 && datos[j-1]>aux) {
+                datos[j]=datos[j-1];
+                j--;
+            }
+            datos[j]=aux;
         }
     }
 
