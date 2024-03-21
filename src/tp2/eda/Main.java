@@ -16,6 +16,13 @@ public class Main {
     public static void main(String[] args) {
         Ordenamiento o1=new Ordenamiento();
         o1.carga();
+        System.out.println("---Carga Original---");
+        o1.mostrar();
+        
+        o1.bubbleSort();
+        System.out.println("---Bubble Sort---");
+        o1.mostrar();
+        
     }
     
 }
