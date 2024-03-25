@@ -22,8 +22,10 @@ public class Main {
 //        o1.bubbleSort();
 //        System.out.println("---Bubble Sort---");
 //        o1.mostrar();
+//
+//        o1.insertionSort();
 
-        o1.insertionSort();
+        o1.bucketSort();
         o1.mostrar();
     }
     
