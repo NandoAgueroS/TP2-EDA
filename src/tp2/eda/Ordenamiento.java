@@ -77,8 +77,8 @@ public class Ordenamiento {
 
     //se debe conocer el rango de numeros a ordenar, ese será el tamaño del arreglo de buckets
     public void bucketSort() {
+        System.out.println("Bucket sort");
         int size = (datos.length);
-        int aux, j;
         int max = 0;
         int[] buckets;
         int s = 0;
